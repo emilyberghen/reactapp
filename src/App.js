@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Plants from "./components/Plants";
+import data from "./data/plants.json";
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTint, faSun, faUtensils, faSeedling } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faTint, faSun, faUtensils, faSeedling);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Plants plants={data} />,
     </div>
   );
 }
