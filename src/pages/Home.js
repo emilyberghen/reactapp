@@ -7,7 +7,7 @@ const PlantPage = () => {
   return (
     <>
       <h1>Plant library</h1>
-      <p>Get to know more about your plants so you can make your favorite ones even happier; and so you can stop killing the others.</p>
+      <header>Get to know more about your plants so you can make your favorite ones even happier; and so you can stop killing the others.</header>
       <Plants plants={data} />
     </>
   )};

@@ -24,6 +24,12 @@ h3 {
   display: inline;
 }
 
+header {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
 p {
   line-height: 1.4;
 }
@@ -65,9 +71,14 @@ input {
       margin: 0 auto;
   }
 
+  header {
+    width: 60%;
+  }
+
   .plants {
     column-count: 3;
     column-gap: 50px;
+    margin-bottom: 100px;
   }
 
   .plants * {
@@ -84,7 +95,20 @@ input {
     display: flex;
   }
 
-  .plantDetail .care {
+  .plantDetail section {
     margin-left: 50px;
+  }
+
+  .plantDetail p {
+    margin: 0 0 50px 0;
+  }
+
+  .plantDetail .care {
+    border-top: 1px solid lavender;
+    padding-top: 20px;
+  }
+
+  .plantDetail .care a {
+    margin-left: 20px;
   }
 }
